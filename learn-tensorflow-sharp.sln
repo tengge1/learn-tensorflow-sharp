@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learn-tensorflow-sharp", "learn-tensorflow-sharp\learn-tensorflow-sharp.csproj", "{7DF197BC-E304-45A3-A7A5-FF1DA404D58F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_HelloWorld", "01_HelloWorld\01_HelloWorld.csproj", "{0762D57C-2C16-428A-8162-9EBF144D0280}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7DF197BC-E304-45A3-A7A5-FF1DA404D58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DF197BC-E304-45A3-A7A5-FF1DA404D58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DF197BC-E304-45A3-A7A5-FF1DA404D58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DF197BC-E304-45A3-A7A5-FF1DA404D58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0762D57C-2C16-428A-8162-9EBF144D0280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0762D57C-2C16-428A-8162-9EBF144D0280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0762D57C-2C16-428A-8162-9EBF144D0280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0762D57C-2C16-428A-8162-9EBF144D0280}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

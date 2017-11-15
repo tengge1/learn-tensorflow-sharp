@@ -287,3 +287,4 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 /learn-tensorflow-sharp/learn-tensorflow-sharp/Lib
+/Libs
