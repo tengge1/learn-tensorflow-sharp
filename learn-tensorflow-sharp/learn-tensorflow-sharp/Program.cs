@@ -11,14 +11,13 @@ namespace LearnTensorflowSharp
     {
         static void Main(string[] args)
         {
-            using (var sess = new TFSession())
+            using (var session = new TFSession())
             {
-                var graph = sess.Graph;
-                var a = graph.Const(3);
-                var b = graph.Const(4);
-
-                var result = sess.GetRunner().Run(graph.Add(a, b));
-                Console.WriteLine(result.GetValue());
+                var graph = session.Graph;
+                var a = graph.Const(2);
+                var b = graph.Const(3);
+                var result = session.GetRunner().Run(graph.Add(a, b)).GetValue();
+                Console.WriteLine(result);
             }
         }
     }
