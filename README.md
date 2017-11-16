@@ -30,4 +30,6 @@ TensorFlow™ 是一个使用数据流图进行数值计算的开源软件库。
 
 * TensorflowSharp开源项目：https://github.com/migueldeicaza/TensorFlowSharp
 
+* TensorflowSharp NuGet主页：https://www.nuget.org/packages/TensorFlowSharp/
+
 * Tensorflow中文社区：http://www.tensorfly.cn/
