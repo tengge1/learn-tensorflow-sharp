@@ -18,6 +18,8 @@ TensorFlow™ 是一个使用数据流图进行数值计算的开源软件库。
 
 1. 国内无法访问Tensorflow官网，但是可以访问谷歌提供的Tensorflow官网镜像：https://tensorflow.google.cn/ 。
 
+2. 国内使用Visual Studio自带的NuGet安装TensorflowSharp很容易失败，可以直接从Nuget官网下载，然后改后缀名zip，手工安装：https://www.nuget.org/packages/TensorFlowSharp/ 。
+
 ## 网站
 
 * Tensorflow官网：http://www.tensorflow.org
