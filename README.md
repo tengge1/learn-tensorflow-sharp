@@ -2,7 +2,7 @@
 
 TensorflowSharp是对Tensorflow C语言版接口的封装，便于.net开发人员在项目中使用Tensorflow。
 
-TensorflowSharp项目源码：https://github.com/migueldeicaza/TensorFlowSharp.git
+TensorflowSharp项目源码：https://github.com/migueldeicaza/TensorFlowSharp
 
 ## 目录
 
