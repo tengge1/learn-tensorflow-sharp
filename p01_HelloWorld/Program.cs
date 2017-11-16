@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TensorFlow;
 
-namespace _01_HelloWorld
+namespace p01_HelloWorld
 {
     class Program
     {
