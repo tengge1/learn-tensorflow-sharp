@@ -1,4 +1,4 @@
-# TensorflowSharp用法
+﻿# TensorflowSharp用法
 
 TensorflowSharp是对Tensorflow C语言版接口的封装，便于.net开发人员在项目中使用Tensorflow。
 
@@ -12,7 +12,7 @@ TensorFlow™ 是一个使用数据流图进行数值计算的开源软件库。
 
 [01 HelloWorld](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p01_HelloWorld/Program.cs)：进行加法和乘法运算，了解TensorflowSharp的基本用法。
 
-[02 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p02_UseVariable/Program.cs)：使用占位符和变量进行复杂数学运算。
+[02 UsePlaceholder](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p02_UsePlaceholder/Program.cs)：使用占位符进行复杂数学运算。
 
 ## 注意事项
 
