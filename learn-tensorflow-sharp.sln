@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p01_HelloWorld", "p01_Hello
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p02_UseVariable", "p02_UseVariable\p02_UseVariable.csproj", "{ACC656B3-A90E-465D-900B-CFC98731F8CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p03_LinearFit", "p03_LinearFit\p03_LinearFit.csproj", "{064E99FA-3E49-4830-BCC1-F958D3551A3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ACC656B3-A90E-465D-900B-CFC98731F8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACC656B3-A90E-465D-900B-CFC98731F8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACC656B3-A90E-465D-900B-CFC98731F8CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
