@@ -5,14 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using TensorFlow;
 
-namespace p02_UseVariable
+namespace p02_UsePlaceholder
 {
+    /// <summary>
+    /// 02 UsePlaceholder
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            var session = new TFSession();
-            var graph = session.Graph;
+            var graph = new TFGraph();
 
             var a = graph.Placeholder(TFDataType.Float, operName: "a");
             var b = graph.Placeholder(TFDataType.Float, operName: "b");
@@ -23,6 +25,8 @@ namespace p02_UseVariable
             var f = graph.Pow(e, b);
             var g = graph.Div(f, a);
             var h = graph.Sqrt(g);
+
+            var session = new TFSession(graph);
 
             // sqrt(((1+2)*3)^2/a) = 9
             var result = session.GetRunner()

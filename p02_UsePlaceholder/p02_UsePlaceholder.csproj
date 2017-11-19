@@ -7,8 +7,8 @@
     <ProjectGuid>{ACC656B3-A90E-465D-900B-CFC98731F8CF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>p02_UseVariable</RootNamespace>
-    <AssemblyName>p02_UseVariable</AssemblyName>
+    <RootNamespace>p02_UsePlaceholder</RootNamespace>
+    <AssemblyName>p02_UsePlaceholder</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
