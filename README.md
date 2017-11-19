@@ -14,6 +14,12 @@ TensorFlow™ 是一个使用数据流图进行数值计算的开源软件库。
 
 [02 UsePlaceholder](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p02_UsePlaceholder/Program.cs)：使用占位符进行复杂数学运算。
 
+[03 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p03_UseVariable/Program.cs)：使用变量多次运算。
+
+[p04 UseMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p04_UseMatrix/Program.cs)：矩阵与常数相乘。
+
+[p05_MatrixMath](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p05_MatrixMath/Program.cs)：矩阵与矩阵相乘。
+
 ## 注意事项
 
 1. 国内无法访问Tensorflow官网，但是可以访问谷歌提供的Tensorflow官网镜像：https://tensorflow.google.cn/ 。
