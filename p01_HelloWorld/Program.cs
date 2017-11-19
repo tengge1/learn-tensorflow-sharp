@@ -7,22 +7,28 @@ using TensorFlow;
 
 namespace p01_HelloWorld
 {
+    /// <summary>
+    /// 01 HelloWorld
+    /// </summary>
+    /// <see cref="https://github.com/migueldeicaza/TensorFlowSharp"/>
     class Program
     {
         static void Main(string[] args)
         {
-            using (var session = new TFSession())
+            var graph = new TFGraph();
+            var a = graph.Const(2);
+            var b = graph.Const(3);
+
+            var add = graph.Add(a, b);
+            var mul = graph.Mul(a, b);
+
+            using (var session = new TFSession(graph))
             {
-                var graph = session.Graph;
-                var a = graph.Const(2);
-                var b = graph.Const(3);
-                Console.WriteLine("a=2,b=3");
+                var result1 = session.GetRunner().Run(add).GetValue();
+                Console.WriteLine("a+b={0}", result1);
 
-                var addResult = session.GetRunner().Run(graph.Add(a, b)).GetValue();
-                Console.WriteLine("a+b={0}", addResult);
-
-                var multiplyResult = session.GetRunner().Run(graph.Mul(a, b)).GetValue();
-                Console.WriteLine("a*b={0}", multiplyResult);
+                var result2 = session.GetRunner().Run(mul).GetValue();
+                Console.WriteLine("a*b={0}", result2);
             }
         }
     }
