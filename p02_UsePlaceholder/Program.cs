@@ -22,7 +22,7 @@ namespace p02_UsePlaceholder
 
             var d = graph.Add(a, b);
             var e = graph.Mul(d, c);
-            var f = graph.Pow(e, b);
+            var f = graph.Pow(e, graph.Const(2.0f));
             var g = graph.Div(f, a);
             var h = graph.Sqrt(g);
 

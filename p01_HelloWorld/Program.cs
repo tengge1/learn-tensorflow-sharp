@@ -10,7 +10,6 @@ namespace p01_HelloWorld
     /// <summary>
     /// 01 HelloWorld
     /// </summary>
-    /// <see cref="https://github.com/migueldeicaza/TensorFlowSharp"/>
     class Program
     {
         static void Main(string[] args)

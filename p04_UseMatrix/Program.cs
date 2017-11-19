@@ -7,14 +7,32 @@ using TensorFlow;
 
 namespace p04_UseMatrix
 {
+    /// <summary>
+    /// 04 UseMatrix
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
             var g = new TFGraph();
 
-            var a = g.Placeholder(TFDataType.Int32);
-            var b = g.Mul(a, g.Const(2));
+            var x = g.Placeholder(TFDataType.Int32);
+
+            var a = g.Const(2);
+            var b = g.Const(new int[,]
+            {
+                { 1, 1 },
+                { 1, 1 }
+            });
+            var c = g.Const(new int[,]
+            {
+                { 1, 0 },
+                { 0, 1 }
+            });
+
+            var d = g.Mul(x, a);
+            var e = g.Add(d, b);
+            var f = g.MatMul(e, c);
 
             var matrix = new int[,]
             {
@@ -22,8 +40,8 @@ namespace p04_UseMatrix
                 { 2, 3 }
             };
 
-            var sess = new TFSession(g);
-            var result = (int[,])sess.GetRunner().AddInput(a, matrix).Fetch(b).Run()[0].GetValue();
+            var session = new TFSession(g);
+            var result = (int[,])session.GetRunner().AddInput(x, matrix).Fetch(f).Run()[0].GetValue();
 
             for (var i = 0; i < matrix.GetLength(0); i++)
             {

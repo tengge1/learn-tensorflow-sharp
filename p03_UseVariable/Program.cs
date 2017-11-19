@@ -14,21 +14,20 @@ namespace p03_UseVariable
     {
         static void Main(string[] args)
         {
-            var g = new TFGraph();
-
             TFOperation init;
             TFOutput value;
-            TFStatus status = new TFStatus();
+
+            var g = new TFGraph();
 
             var a = g.Variable(g.Const(1.5), out init, out value);
             var inc = g.Const(0.5);
 
+            // value+inc=>a
             var update = g.AssignVariableOp(a, g.Add(value, inc));
 
             var session = new TFSession(g);
 
-            session.GetRunner().AddTarget(init).Run(status);
-            Console.WriteLine("init status: {0}", status.StatusCode.ToString());
+            session.GetRunner().AddTarget(init).Run();
 
             for (var i = 0; i < 5; i++)
             {
