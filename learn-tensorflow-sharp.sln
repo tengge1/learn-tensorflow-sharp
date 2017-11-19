@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p01_HelloWorld", "p01_HelloWorld\p01_HelloWorld.csproj", "{0762D57C-2C16-428A-8162-9EBF144D0280}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p33_LinearFit", "p03_LinearFit\p33_LinearFit.csproj", "{064E99FA-3E49-4830-BCC1-F958D3551A3D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p02_UsePlaceholder", "p02_UsePlaceholder\p02_UsePlaceholder.csproj", "{ACC656B3-A90E-465D-900B-CFC98731F8CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p03_UseVariable", "p03_UseVariable\p03_UseVariable.csproj", "{797B3EA6-751B-46CE-B8C6-C79FF642CF8B}"
@@ -14,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p04_UseMatrix", "p04_UseMatrix\p04_UseMatrix.csproj", "{FC0A95E0-D4D3-4900-9BC3-A10DE5455B78}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p05_MatrixMath", "p05_MatrixMath\p05_MatrixMath.csproj", "{4095A501-115D-46A9-99B7-B5CBB8E4254F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p06_LinearRegression", "p06_LinearRegression\p06_LinearRegression.csproj", "{064E99FA-3E49-4830-BCC1-F958D3551A3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p07_MNIST", "p07_MNIST\p07_MNIST.csproj", "{66D7C53E-BABE-44A1-8D6E-0CC6A09ADDA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +27,6 @@ Global
 		{0762D57C-2C16-428A-8162-9EBF144D0280}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0762D57C-2C16-428A-8162-9EBF144D0280}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0762D57C-2C16-428A-8162-9EBF144D0280}.Release|Any CPU.Build.0 = Release|Any CPU
-		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ACC656B3-A90E-465D-900B-CFC98731F8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ACC656B3-A90E-465D-900B-CFC98731F8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACC656B3-A90E-465D-900B-CFC98731F8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +43,14 @@ Global
 		{4095A501-115D-46A9-99B7-B5CBB8E4254F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4095A501-115D-46A9-99B7-B5CBB8E4254F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4095A501-115D-46A9-99B7-B5CBB8E4254F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064E99FA-3E49-4830-BCC1-F958D3551A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D7C53E-BABE-44A1-8D6E-0CC6A09ADDA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D7C53E-BABE-44A1-8D6E-0CC6A09ADDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D7C53E-BABE-44A1-8D6E-0CC6A09ADDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D7C53E-BABE-44A1-8D6E-0CC6A09ADDA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
