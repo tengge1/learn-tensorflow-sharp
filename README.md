@@ -16,6 +16,44 @@ TensorflowSharp是对Tensorflow C语言版接口的封装，便于.net开发人�
 
 [p05_MatrixMath](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p05_MatrixMath/Program.cs)：矩阵与矩阵相乘。
 
+## 示例
+
+TensorflowSharp的用法还是很简单的
+
+```C#
+// 创建图
+var g = new TFGraph();
+
+// 定义常量
+var a = g.Const(2);
+var b = g.Const(3);
+
+// 加法和乘法运算
+var add = g.Add(a, b);
+var mul = g.Mul(a, b);
+
+// 创建会话
+var sess = new TFSession(g);
+
+// 计算加法
+var result1 = sess.GetRunner().Run(add).GetValue();
+Console.WriteLine("a+b={0}", result1);
+
+// 计算乘法
+var result2 = sess.GetRunner().Run(mul).GetValue();
+Console.WriteLine("a*b={0}", result2);
+
+// 关闭会话
+sess.CloseSession();
+```
+
+执行后输出结果
+
+```
+a+b=5
+a*b=6
+```
+
 ## 注意事项
 
 1. 国内目前无法访问Tensorflow官网，但是可以访问谷歌提供的[Tensorflow官网镜像](https://tensorflow.google.cn/)。
