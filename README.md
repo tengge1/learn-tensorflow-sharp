@@ -48,7 +48,7 @@ a*b=6
 
 [02 UsePlaceholder](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p02_UsePlaceholder/Program.cs)：占位符的使用。
 
-[03 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p03_UseVariable/Program.cs)：变量的初始化和更新。
+[03 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p03_UseVariable/Program.cs)：变量的初始化和赋值。
 
 ## 注意事项
 
