@@ -4,18 +4,6 @@ TensorFlow™ 是一个使用数据流图进行数值计算的开源软件库。
 
 TensorflowSharp是对Tensorflow C语言版接口的封装，便于.net开发人员在项目中使用Tensorflow。
 
-## 目录
-
-[01 HelloWorld](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p01_HelloWorld/Program.cs)：进行加法和乘法运算，了解TensorflowSharp的基本用法。
-
-[02 UsePlaceholder](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p02_UsePlaceholder/Program.cs)：使用占位符进行复杂数学运算。
-
-[03 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p03_UseVariable/Program.cs)：使用变量多次运算。
-
-[p04 UseMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p04_UseMatrix/Program.cs)：矩阵与常数相乘。
-
-[p05_MatrixMath](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p05_MatrixMath/Program.cs)：矩阵与矩阵相乘。
-
 ## 示例
 
 TensorflowSharp的用法还是很简单的
@@ -53,6 +41,14 @@ sess.CloseSession();
 a+b=5
 a*b=6
 ```
+
+## 目录
+
+[01 HelloWorld](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p01_HelloWorld/Program.cs)：TensorflowSharp入门。
+
+[02 UsePlaceholder](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p02_UsePlaceholder/Program.cs)：占位符的使用。
+
+[03 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p03_UseVariable/Program.cs)：变量的初始化和赋值。
 
 ## 注意事项
 
