@@ -11,19 +11,20 @@ namespace p05_MatrixMath
     {
         static void Main(string[] args)
         {
+            TFOperation init;
+            TFOutput value;
+
             var g = new TFGraph();
 
-            var a = g.Const(new double[,] { { 1, 2 } });
-            var b = g.Const(new double[,] { { 3 }, { 4 } });
-
-            var mul = g.MatMul(a, b);
+            var a = g.Variable(g.Const(1), out init, out value);
 
             var sess = new TFSession(g);
 
-            var result = sess.GetRunner().Run(mul);
+            sess.GetRunner().AddTarget(init).Run();
 
-            Console.WriteLine(result.ToString());
-            Console.WriteLine(((double[,])result.GetValue())[0, 0]);
+            var result = sess.GetRunner().Run(value);
+
+            Console.WriteLine(result);
         }
     }
 }
