@@ -48,9 +48,9 @@ a*b=6
 
 [03 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p03_UseVariable/Program.cs)：变量的使用。
 
-[p04_InitVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p04_InitVariable/Program.cs)：变量的初始化。
+[04 InitVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p04_InitVariable/Program.cs)：变量的初始化。
 
-[p05_UseMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p05_UseMatrix/Program.cs)：矩阵相加、数乘、矩阵相乘。
+[05 UseMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p05_UseMatrix/Program.cs)：矩阵相加、数乘、矩阵相乘。
 
 ## 注意事项
 
