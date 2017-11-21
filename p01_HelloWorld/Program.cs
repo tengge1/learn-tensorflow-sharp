@@ -14,21 +14,30 @@ namespace p01_HelloWorld
     {
         static void Main(string[] args)
         {
-            var graph = new TFGraph();
-            var a = graph.Const(2);
-            var b = graph.Const(3);
+            // 创建图
+            var g = new TFGraph();
 
-            var add = graph.Add(a, b);
-            var mul = graph.Mul(a, b);
+            // 定义常量
+            var a = g.Const(2);
+            var b = g.Const(3);
 
-            using (var session = new TFSession(graph))
-            {
-                var result1 = session.GetRunner().Run(add).GetValue();
-                Console.WriteLine("a+b={0}", result1);
+            // 加法和乘法运算
+            var add = g.Add(a, b);
+            var mul = g.Mul(a, b);
 
-                var result2 = session.GetRunner().Run(mul).GetValue();
-                Console.WriteLine("a*b={0}", result2);
-            }
+            // 创建会话
+            var sess = new TFSession(g);
+
+            // 计算加法
+            var result1 = sess.GetRunner().Run(add).GetValue();
+            Console.WriteLine("a+b={0}", result1);
+
+            // 计算乘法
+            var result2 = sess.GetRunner().Run(mul).GetValue();
+            Console.WriteLine("a*b={0}", result2);
+
+            // 关闭会话
+            sess.CloseSession();
         }
     }
 }
