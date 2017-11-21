@@ -1,8 +1,6 @@
 # TensorflowSharp教程
 
-TensorFlow™ 是一个使用数据流图进行数值计算的开源软件库。图中的节点代表数学运算， 而图中的边则代表在这些节点之间传递的多维数组（张量）。这种灵活的架构可让您使用一个 API 将计算工作部署到桌面设备、服务器或者移动设备中的一个或多个 CPU 或 GPU。 TensorFlow 最初是由 Google 机器智能研究部门的 Google Brain 团队中的研究人员和工程师开发的，用于进行机器学习和深度神经网络研究， 但它是一个非常基础的系统，因此也可以应用于众多其他领域。
-
-TensorflowSharp是对Tensorflow C语言版接口的封装，便于.net开发人员在项目中使用Tensorflow。
+Tensorflow是一个人工智能框架。TensorflowSharp是对Tensorflow C语言版接口的封装，便于.net开发人员在项目中使用Tensorflow。
 
 ## 示例
 
@@ -48,9 +46,11 @@ a*b=6
 
 [02 UsePlaceholder](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p02_UsePlaceholder/Program.cs)：占位符的使用。
 
-[03 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p03_UseVariable/Program.cs)：变量的初始化和赋值。
+[03 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p03_UseVariable/Program.cs)：变量的使用。
 
-[04 UseMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p04_UseMatrix/Program.cs)：矩阵相加、数乘、矩阵相乘。
+[04 InitVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p04_InitVariable/Program.cs)：变量的初始化。
+
+[05 UseMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p05_UseMatrix/Program.cs)：矩阵相加、数乘、矩阵相乘。
 
 ## 注意事项
 
