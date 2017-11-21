@@ -50,6 +50,8 @@ a*b=6
 
 [03 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p03_UseVariable/Program.cs)：变量的初始化和赋值。
 
+[04 UseMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p04_UseMatrix/Program.cs)：矩阵相加、数乘、矩阵相乘。
+
 ## 注意事项
 
 1. 国内目前无法访问Tensorflow官网，但是可以访问谷歌提供的[Tensorflow官网镜像](https://tensorflow.google.cn/)。
