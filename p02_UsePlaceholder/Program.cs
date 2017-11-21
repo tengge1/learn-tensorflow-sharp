@@ -14,30 +14,34 @@ namespace p02_UsePlaceholder
     {
         static void Main(string[] args)
         {
-            var graph = new TFGraph();
+            // 创建图
+            var g = new TFGraph();
 
-            var a = graph.Placeholder(TFDataType.Float, operName: "a");
-            var b = graph.Placeholder(TFDataType.Float, operName: "b");
-            var c = graph.Placeholder(TFDataType.Float, operName: "c");
+            // 创建占位符，以便在运行时赋值
+            var x = g.Placeholder(TFDataType.Float); // 1
+            var y = g.Placeholder(TFDataType.Float); // 2
+            var z = g.Placeholder(TFDataType.Float); // 3
 
-            var d = graph.Add(a, b);
-            var e = graph.Mul(d, c);
-            var f = graph.Pow(e, graph.Const(2.0f));
-            var g = graph.Div(f, a);
-            var h = graph.Sqrt(g);
+            // 进行各种数学运算
+            var a = g.Add(x, y);
+            var b = g.Mul(a, z);
+            var c = g.Pow(b, g.Const(2.0f)); // 注意：一定要保证数据类型相同，否则报错
+            var d = g.Div(c, x);
+            var e = g.Sqrt(d);
 
-            var session = new TFSession(graph);
+            // 定义会话
+            var sess = new TFSession(g);
 
-            // sqrt(((1+2)*3)^2/a) = 9
-            var result = session.GetRunner()
-                .AddInput("a", 1.0f)
-                .AddInput("b", 2.0f)
-                .AddInput("c", 3.0f)
-                .Run(h).GetValue();
+            // 给占位符赋值并运行图
+            var result = sess.GetRunner()
+                .AddInput(x, 1.0f) // 注意：一定要保证数据类型相同，否则报错
+                .AddInput(y, 2.0f)
+                .AddInput(z, 3.0f)
+                .Run(e).GetValue();
 
-            Console.WriteLine("h={0}", result);
-
-            session.CloseSession();
+            // 输出结果
+            // sqrt(((1+2)*3)^2/1) = 9
+            Console.WriteLine("e={0}", result);
         }
     }
 }
