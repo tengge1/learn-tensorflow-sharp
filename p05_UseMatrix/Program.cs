@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using TensorFlow;
 
-namespace p04_UseMatrix
+namespace p05_UseMatrix
 {
     /// <summary>
-    /// 04 使用矩阵
+    /// 05 使用矩阵
     /// </summary>
     class Program
     {
