@@ -16,7 +16,7 @@ TensorflowSharp是对Tensorflow C语言版接口的封装，便于.net开发人�
 
 [p05_MatrixMath](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p05_MatrixMath/Program.cs)：矩阵与矩阵相乘。
 
-## 示例程序
+## 示例
 
 TensorflowSharp的用法还是很简单的
 
