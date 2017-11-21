@@ -8,7 +8,7 @@ using TensorFlow;
 namespace p02_UsePlaceholder
 {
     /// <summary>
-    /// 02 UsePlaceholder
+    /// 02 使用占位符
     /// </summary>
     class Program
     {
