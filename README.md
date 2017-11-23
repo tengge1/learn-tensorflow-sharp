@@ -56,6 +56,8 @@ a*b=6
 
 [p07_MNIST](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p07_MNIST/Program.cs)：手写数字识别。
 
+[p08_UseTensor](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p08_UseTensor/Program.cs)：张量的使用。
+
 ## 注意事项
 
 1. 国内目前无法访问Tensorflow官网，但是可以访问谷歌提供的[Tensorflow官网镜像](https://tensorflow.google.cn/)。
