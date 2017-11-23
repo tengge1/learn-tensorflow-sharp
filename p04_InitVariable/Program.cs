@@ -27,7 +27,7 @@ namespace p04_InitVariable
 
             // 定义变量
             var a = g.Variable(g.Const(1.0), out aInit, out aValue);
-            var b = g.Variable(g.Const(1.5), out bInit, out bValue);
+            var b = g.Variable(g.Range(g.Const(1.0), g.Const(100.0)), out bInit, out bValue);
 
             // 创建会话
             var sess = new TFSession(g);
@@ -36,12 +36,11 @@ namespace p04_InitVariable
             sess.GetRunner().AddTarget(aInit, bInit).Run(status);
             Console.WriteLine(status.StatusCode);
 
-            // 进行计算，并输出计算状态
-            var result = sess.GetRunner().Run(aValue, status);
+            // 并输出计算状态和计算结果
+            var result = sess.GetRunner().Fetch(aValue, bValue).Run(status);
             Console.WriteLine(status.StatusCode);
-
-            // 输出结果
-            Console.WriteLine(result);
+            Console.WriteLine(result[0].GetValue());
+            Console.WriteLine(result[1].GetValue());
         }
     }
 }
