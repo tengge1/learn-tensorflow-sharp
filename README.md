@@ -52,6 +52,10 @@ a*b=6
 
 [05 UseMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p05_UseMatrix/Program.cs)：矩阵相加、数乘、矩阵相乘。
 
+[p06_LinearRegression](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p06_LinearRegression/Program.cs)：线性回归（未实现）。
+
+[p07_MNIST](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p07_MNIST/Program.cs)：手写数字识别。
+
 ## 注意事项
 
 1. 国内目前无法访问Tensorflow官网，但是可以访问谷歌提供的[Tensorflow官网镜像](https://tensorflow.google.cn/)。
