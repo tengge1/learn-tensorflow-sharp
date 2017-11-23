@@ -8,7 +8,7 @@ using TensorFlow;
 namespace p03_LinearFit
 {
     /// <summary>
-    /// 06 线性回归
+    /// 06 线性回归（没实现）
     /// </summary>
     class Program
     {
