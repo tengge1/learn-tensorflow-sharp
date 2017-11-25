@@ -37,10 +37,9 @@ namespace p04_InitVariable
             Console.WriteLine(status.StatusCode);
 
             // 并输出计算状态和计算结果
-            var result = sess.GetRunner().Fetch(aValue, bValue).Run(status);
-            Console.WriteLine(status.StatusCode);
+            var result = sess.GetRunner().Fetch(aValue, bValue).Run();
             Console.WriteLine(result[0].GetValue());
-            Console.WriteLine(result[1].GetValue());
+            Console.WriteLine(string.Join(",", (double[])result[1].GetValue()));
         }
     }
 }
