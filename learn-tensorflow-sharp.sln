@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p99_Test", "p99_Test\p99_Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p08_UseTensor", "p08_UseTensor\p08_UseTensor.csproj", "{FA3EDE73-6152-49A8-9CF8-9A7C2B89E23B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p09_GenerateData", "p09_GenerateData\p09_GenerateData.csproj", "{35AD059C-DB3F-4760-A279-233276ECE8E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{FA3EDE73-6152-49A8-9CF8-9A7C2B89E23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA3EDE73-6152-49A8-9CF8-9A7C2B89E23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA3EDE73-6152-49A8-9CF8-9A7C2B89E23B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35AD059C-DB3F-4760-A279-233276ECE8E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35AD059C-DB3F-4760-A279-233276ECE8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35AD059C-DB3F-4760-A279-233276ECE8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35AD059C-DB3F-4760-A279-233276ECE8E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
