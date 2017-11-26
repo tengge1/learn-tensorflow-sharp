@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text;
 using TensorFlow;
 
 namespace p09_GenerateData
@@ -21,30 +22,33 @@ namespace p09_GenerateData
             var shape = new TFShape(20);
 
             // 创建1到100的序列
-            var range = g.Range(g.Const(1), g.Const(100));
+            var range = g.Range(g.Const(1), g.Const(10));
 
             // 创建平均数是1.0，标准差是0.5，长度是20的满足正态分布的随机数
             var randomNormal = g.RandomNormal(shape, 1.0, 0.5);
 
-            // 创建alpha为0.5的伽马随机分布
-            var randomGamma = g.RandomGamma(g.Range(g.Const(1), g.Const(10), operName: "gamma"), g.Const(0.5));
+            // 返回随机位置
+            var randomPosition = g.RandomPoisson(g.Range(g.Const(10), g.Const(10), operName: "pos"), g.Const(0.5));
 
             // 创建会话
             var sess = new TFSession(g);
 
-            // 输出序列
-            var result = sess.GetRunner().Run(range);
-            Console.WriteLine("Range: " + string.Join(",", (int[])result.GetValue()));
+            // 输出结果
+            var result = sess.GetRunner().Fetch(range, randomNormal, randomPosition).Run();
+            Console.WriteLine("Range: " + ArrayToString((int[])result[0].GetValue()));
+            Console.WriteLine("Random Normal: " + ArrayToString((double[])(result[1].GetValue())));
+            Console.WriteLine("Random Position: " + result[2].GetValue());
+        }
 
-            // 输出正态分布随机数
-            result = sess.GetRunner().Run(randomNormal);
-            Console.WriteLine("Random Normal: " + string.Join(",", (double[])result.GetValue()));
-
-            // 输出伽马随机分布
-            result = sess.GetRunner().Run(randomGamma);
-            Console.WriteLine("Random Gamma: " + string.Join(",", (double[])result.GetValue()));
-
-            sess.CloseSession();
+        static string ArrayToString(Array array)
+        {
+            var sb = new StringBuilder();
+            for (var i = 0; i < array.Length; i++)
+            {
+                sb.Append(array.GetValue(i));
+                sb.Append(",");
+            }
+            return sb.ToString();
         }
     }
 }
