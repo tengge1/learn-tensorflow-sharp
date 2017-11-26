@@ -58,6 +58,10 @@ a*b=6
 
 [p08_UseTensor](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p08_UseTensor/Program.cs)：张量的使用。
 
+[p09_GenerateData](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p09_GenerateData/Program.cs)：产生序列、正态分布随机数和随机位置。
+
+[p10_CalculateGradient](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p10_CalculateGradient/Program.cs)：计算倾斜度（偏导数）。
+
 ## 注意事项
 
 1. 国内目前无法访问Tensorflow官网，但是可以访问谷歌提供的[Tensorflow官网镜像](https://tensorflow.google.cn/)。
