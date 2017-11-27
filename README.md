@@ -30,6 +30,8 @@ Tensorflow是一个人工智能框架。TensorflowSharp是对Tensorflow C语言�
 
 [p13_BitwiseOperation](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p13_BitwiseOperation/Program.cs)：按位与、按位或、按位异或运算。
 
+[p14_UseStack](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p14_UseStack/Program.cs)：使用堆栈。
+
 ## 示例
 
 TensorflowSharp的用法还是很简单的
