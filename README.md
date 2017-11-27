@@ -2,6 +2,30 @@
 
 Tensorflow是一个人工智能框架。TensorflowSharp是对Tensorflow C语言版接口的封装，便于.net开发人员在项目中使用Tensorflow。
 
+## 目录
+
+[01 HelloWorld](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p01_HelloWorld/Program.cs)：TensorflowSharp入门。
+
+[02 UsePlaceholder](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p02_UsePlaceholder/Program.cs)：占位符的使用。
+
+[03 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p03_UseVariable/Program.cs)：变量的使用。
+
+[04 InitVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p04_InitVariable/Program.cs)：变量的初始化。
+
+[05 UseMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p05_UseMatrix/Program.cs)：矩阵相加、数乘、矩阵相乘。
+
+[p06_LinearRegression](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p06_LinearRegression/Program.cs)：线性回归（未实现）。
+
+[p07_MNIST](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p07_MNIST/Program.cs)：手写数字识别。
+
+[p08_UseTensor](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p08_UseTensor/Program.cs)：张量的使用。
+
+[p09_GenerateData](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p09_GenerateData/Program.cs)：产生序列、正态分布随机数和随机位置。
+
+[p10_CalculateGradient](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p10_CalculateGradient/Program.cs)：计算倾斜度（偏导数）。
+
+[p11_ReduceMethod](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p11_ReduceMethod/Program.cs)：ReduceMean、ReduceSum计算原理和方法。
+
 ## 示例
 
 TensorflowSharp的用法还是很简单的
@@ -39,28 +63,6 @@ sess.CloseSession();
 a+b=5
 a*b=6
 ```
-
-## 目录
-
-[01 HelloWorld](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p01_HelloWorld/Program.cs)：TensorflowSharp入门。
-
-[02 UsePlaceholder](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p02_UsePlaceholder/Program.cs)：占位符的使用。
-
-[03 UseVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p03_UseVariable/Program.cs)：变量的使用。
-
-[04 InitVariable](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p04_InitVariable/Program.cs)：变量的初始化。
-
-[05 UseMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p05_UseMatrix/Program.cs)：矩阵相加、数乘、矩阵相乘。
-
-[p06_LinearRegression](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p06_LinearRegression/Program.cs)：线性回归（未实现）。
-
-[p07_MNIST](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p07_MNIST/Program.cs)：手写数字识别。
-
-[p08_UseTensor](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p08_UseTensor/Program.cs)：张量的使用。
-
-[p09_GenerateData](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p09_GenerateData/Program.cs)：产生序列、正态分布随机数和随机位置。
-
-[p10_CalculateGradient](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p10_CalculateGradient/Program.cs)：计算倾斜度（偏导数）。
 
 ## 注意事项
 
