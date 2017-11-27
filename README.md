@@ -28,6 +28,8 @@ Tensorflow是一个人工智能框架。TensorflowSharp是对Tensorflow C语言�
 
 [p12_ClipMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p12_ClipMatrix/Program.cs)：裁剪矩阵（限制矩阵的最小、最大值）。
 
+[p13_BitwiseOperation](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p13_BitwiseOperation/Program.cs)：按位与、按位或、按位异或运算。
+
 ## 示例
 
 TensorflowSharp的用法还是很简单的
