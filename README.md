@@ -26,6 +26,8 @@ Tensorflow是一个人工智能框架。TensorflowSharp是对Tensorflow C语言�
 
 [p11_ReduceMethod](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p11_ReduceMethod/Program.cs)：ReduceMean、ReduceSum计算原理和方法。
 
+[p12_ClipMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p12_ClipMatrix/Program.cs)：裁剪矩阵（限制矩阵的最小、最大值）。
+
 ## 示例
 
 TensorflowSharp的用法还是很简单的
