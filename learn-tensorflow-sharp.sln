@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p11_ReduceMethod", "p11_Red
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p12_ClipMatrix", "p12_ClipMatrix\p12_ClipMatrix.csproj", "{BAF4D208-5A6E-44EC-9675-E013F991D9D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p13_BitwiseOperation", "p13_BitwiseOperation\p13_BitwiseOperation.csproj", "{542378C1-406E-4B5D-B805-E0D009A5390D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{BAF4D208-5A6E-44EC-9675-E013F991D9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAF4D208-5A6E-44EC-9675-E013F991D9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAF4D208-5A6E-44EC-9675-E013F991D9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542378C1-406E-4B5D-B805-E0D009A5390D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542378C1-406E-4B5D-B805-E0D009A5390D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542378C1-406E-4B5D-B805-E0D009A5390D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542378C1-406E-4B5D-B805-E0D009A5390D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
