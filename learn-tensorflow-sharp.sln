@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p09_GenerateData", "p09_Gen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p10_CalculateGradient", "p10_CalculateGradient\p10_CalculateGradient.csproj", "{E0491435-1DBD-4516-A972-BBB1C763CB35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p11_CalculateReduceMean", "p11_CalculateReduceMean\p11_CalculateReduceMean.csproj", "{3BA622EE-CFF7-4C95-BE25-8461A9FA76A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p11_ReduceMethod", "p11_ReduceMethod\p11_ReduceMethod.csproj", "{3BA622EE-CFF7-4C95-BE25-8461A9FA76A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,8 +7,8 @@
     <ProjectGuid>{3BA622EE-CFF7-4C95-BE25-8461A9FA76A4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>p11_CalculateReduceMean</RootNamespace>
-    <AssemblyName>p11_CalculateReduceMean</AssemblyName>
+    <RootNamespace>p11_ReduceMethod</RootNamespace>
+    <AssemblyName>p11_ReduceMethod</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
