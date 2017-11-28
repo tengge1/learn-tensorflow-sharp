@@ -32,6 +32,8 @@ Tensorflow是一个人工智能框架。TensorflowSharp是对Tensorflow C语言�
 
 [p14_UseStack](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p14_UseStack/Program.cs)：使用堆栈。
 
+[p15_PartialRun](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p15_PartialRun/Program.cs)：部分运行。
+
 ## 示例
 
 TensorflowSharp的用法还是很简单的
