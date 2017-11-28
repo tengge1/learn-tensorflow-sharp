@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p13_BitwiseOperation", "p13
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p14_UseStack", "p14_UseStack\p14_UseStack.csproj", "{48E0620A-6358-42FB-92B8-69E832FAA684}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p15_PartialRun", "p15_PartialRun\p15_PartialRun.csproj", "{562F2E7E-1A4C-4B87-B22D-0C5CB3942F60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{48E0620A-6358-42FB-92B8-69E832FAA684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48E0620A-6358-42FB-92B8-69E832FAA684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48E0620A-6358-42FB-92B8-69E832FAA684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562F2E7E-1A4C-4B87-B22D-0C5CB3942F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562F2E7E-1A4C-4B87-B22D-0C5CB3942F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562F2E7E-1A4C-4B87-B22D-0C5CB3942F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562F2E7E-1A4C-4B87-B22D-0C5CB3942F60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
