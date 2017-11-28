@@ -32,21 +32,30 @@ namespace p03_LinearFit
             var y = g.Placeholder(TFDataType.Double);
 
             // 权重和偏置
-            var w = g.Variable(g.Const(0.0), operName: "weight");
-            var b = g.Variable(g.Const(0.01), operName: "bias");
-            var output = g.Add(g.Mul(x, w.Read), b.Read);
+            var W = g.VariableV2(TFShape.Scalar, TFDataType.Double, operName: "weight");
+            var b = g.VariableV2(TFShape.Scalar, TFDataType.Double, operName: "bias");
+
+            var initW = g.Assign(W, g.Const(1.0));
+            var initb = g.Assign(b, g.Const(0.01));
+
+            var output = g.Add(g.Mul(x, W), b);
 
             // 损失
             var loss = g.ReduceSum(g.Pow(g.Sub(output, y), g.Const(2.0)));
-            var learning_rate = 0.5;
+            var update = g.AddGradients(new TFOutput[] { loss }, new TFOutput[] { W, b });
 
             // 创建会话
             var sess = new TFSession(g);
 
+            // 变量初始化
+            sess.GetRunner().AddTarget(initW.Operation, initb.Operation).Run();
+
             // 进行训练拟合
+            var learning_rate = 0.5;
             for (var i = 0; i < 10; i++)
             {
                 var result = sess.GetRunner().AddInput(x, xData).AddInput(y, yData).Fetch(loss).Run();
+
                 Console.WriteLine(result[0].GetValue());
             }
         }
