@@ -14,30 +14,34 @@ namespace p03_LinearFit
     {
         static void Main(string[] args)
         {
-            // 所需数据
-            var xData = new double[] {
-                3.3, 4.4, 5.5, 6.71, 6.93, 4.168, 9.779, 6.182, 7.59, 2.167,
-                7.042, 10.791, 5.313, 7.997, 5.654, 9.27, 3.1
-            };
-            var yData = new double[] {
-                1.7,2.76,2.09,3.19,1.694,1.573,3.366,2.596,2.53,1.221,
-                 2.827,3.465,1.65,2.904,2.42,2.94,1.3
-            };
-            var learning_rate = 0.001;
+            // 创建所需数据
+            var xList = new List<double>();
+            var yList = new List<double>();
+            var ran = new Random();
+            for (var i = 0; i < 10; i++)
+            {
+                var num = ran.NextDouble();
+                var noise = ran.NextDouble();
+                xList.Add(num);
+                yList.Add(num * 3 + 4 + noise); // y = 3 * x + 4
+            }
+            var xData = xList.ToArray();
+            var yData = yList.ToArray();
+            var learning_rate = 0.01;
 
             // 创建图
             var g = new TFGraph();
 
             // 创建占位符
-            var x = g.Placeholder(TFDataType.Double);
-            var y = g.Placeholder(TFDataType.Double);
+            var x = g.Placeholder(TFDataType.Double, new TFShape(xData.Length));
+            var y = g.Placeholder(TFDataType.Double, new TFShape(yData.Length));
 
             // 权重和偏置
             var W = g.VariableV2(TFShape.Scalar, TFDataType.Double, operName: "weight");
             var b = g.VariableV2(TFShape.Scalar, TFDataType.Double, operName: "bias");
 
-            var initW = g.Assign(W, g.Const(100.0));
-            var initb = g.Assign(b, g.Const(0.01));
+            var initW = g.Assign(W, g.Const(ran.NextDouble()));
+            var initb = g.Assign(b, g.Const(ran.NextDouble()));
 
             var output = g.Add(g.Mul(x, W), b);
 
@@ -52,16 +56,18 @@ namespace p03_LinearFit
 
             // 创建会话
             var sess = new TFSession(g);
-            var runner = sess.GetRunner();
-            runner.AddInput(x, xData).AddInput(y, yData);
 
             // 变量初始化
-            runner.AddTarget(initW.Operation, initb.Operation).Run();
+            sess.GetRunner().AddTarget(initW.Operation, initb.Operation).Run();
 
             // 进行训练拟合
-            for (var i = 0; i < 10; i++)
+            for (var i = 0; i < 1000; i++)
             {
-                var result = runner.AddTarget(optimize).Fetch(loss, W, b).Run();
+                var result = sess.GetRunner()
+                    .AddInput(x, xData)
+                    .AddInput(y, yData)
+                    .AddTarget(optimize)
+                    .Fetch(loss, W, b).Run();
 
                 Console.WriteLine("loss: {0} W:{1} b:{2}", result[0].GetValue(), result[1].GetValue(), result[2].GetValue());
             }
