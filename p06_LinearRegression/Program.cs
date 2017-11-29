@@ -41,7 +41,7 @@ namespace p03_LinearFit
             var output = g.Add(g.Mul(x, W), b);
 
             // 损失
-            var loss = g.ReduceSum(g.Pow(g.Sub(output, y), g.Const(2.0)));
+            var loss = g.ReduceSum(g.Abs(g.Sub(output, y)));
             var grad = g.AddGradients(new TFOutput[] { loss }, new TFOutput[] { W, b });
 
             // 创建会话
@@ -54,9 +54,13 @@ namespace p03_LinearFit
             var learning_rate = 0.5;
             for (var i = 0; i < 10; i++)
             {
-                var result = sess.GetRunner().AddInput(x, xData).AddInput(y, yData).Fetch(loss).Run();
+                var lossResult = sess.GetRunner().AddInput(x, xData).AddInput(y, yData).Fetch(loss).Run();
 
-                Console.WriteLine(result[0].GetValue());
+                var gradResult = sess.GetRunner().AddInput(x, xData).AddInput(y, yData).Fetch(grad[0], grad[1]).Run();
+
+                Console.WriteLine(lossResult[0].GetValue());
+                Console.WriteLine(gradResult[0].GetValue());
+                Console.WriteLine(gradResult[1].GetValue());
             }
         }
     }
