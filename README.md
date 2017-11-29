@@ -14,7 +14,7 @@ Tensorflow是一个人工智能框架。TensorflowSharp是对Tensorflow C语言�
 
 [05 UseMatrix](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p05_UseMatrix/Program.cs)：矩阵相加、数乘、矩阵相乘。
 
-[p06_LinearRegression](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p06_LinearRegression/Program.cs)：线性回归（未实现）。
+[p06_LinearRegression](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p06_LinearRegression/Program.cs)：线性回归。
 
 [p07_MNIST](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p07_MNIST/Program.cs)：手写数字识别。
 
