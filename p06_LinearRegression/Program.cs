@@ -42,7 +42,7 @@ namespace p03_LinearFit
 
             // 损失
             var loss = g.ReduceSum(g.Pow(g.Sub(output, y), g.Const(2.0)));
-            var update = g.AddGradients(new TFOutput[] { loss }, new TFOutput[] { W, b });
+            var grad = g.AddGradients(new TFOutput[] { loss }, new TFOutput[] { W, b });
 
             // 创建会话
             var sess = new TFSession(g);
