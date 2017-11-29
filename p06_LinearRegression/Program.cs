@@ -23,6 +23,7 @@ namespace p03_LinearFit
                 1.7,2.76,2.09,3.19,1.694,1.573,3.366,2.596,2.53,1.221,
                  2.827,3.465,1.65,2.904,2.42,2.94,1.3
             };
+            var learning_rate = 0.001;
 
             // 创建图
             var g = new TFGraph();
@@ -43,24 +44,27 @@ namespace p03_LinearFit
             // 损失
             var loss = g.ReduceSum(g.Abs(g.Sub(output, y)));
             var grad = g.AddGradients(new TFOutput[] { loss }, new TFOutput[] { W, b });
+            var minimize = new[]
+            {
+                g.AssignSub(W, g.Mul(grad[0], g.Const(learning_rate))).Operation,
+                g.AssignSub(b, g.Mul(grad[1], g.Const(learning_rate))).Operation
+            };
 
             // 创建会话
             var sess = new TFSession(g);
+            var runner = sess.GetRunner();
+            runner.AddInput(x, xData).AddInput(y, yData);
 
             // 变量初始化
-            sess.GetRunner().AddTarget(initW.Operation, initb.Operation).Run();
+            runner.AddTarget(initW.Operation, initb.Operation).Run();
 
             // 进行训练拟合
-            var learning_rate = 0.5;
             for (var i = 0; i < 10; i++)
             {
-                var lossResult = sess.GetRunner().AddInput(x, xData).AddInput(y, yData).Fetch(loss).Run();
+                var result = runner.Fetch(loss, W, b).Run();
+                runner.AddTarget(minimize).Run();
 
-                var gradResult = sess.GetRunner().AddInput(x, xData).AddInput(y, yData).Fetch(grad[0], grad[1]).Run();
-
-                Console.WriteLine(lossResult[0].GetValue());
-                Console.WriteLine(gradResult[0].GetValue());
-                Console.WriteLine(gradResult[1].GetValue());
+                Console.WriteLine("loss: {0} W:{1} b:{2}", result[0].GetValue(), result[1].GetValue(), result[2].GetValue());
             }
         }
     }
