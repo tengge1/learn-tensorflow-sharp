@@ -41,6 +41,7 @@ namespace p16_ModelSave
 
             // 保存模型
             var path = Environment.CurrentDirectory;
+            //g.Save("")
         }
     }
 }
