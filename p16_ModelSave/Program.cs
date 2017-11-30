@@ -38,6 +38,9 @@ namespace p16_ModelSave
                 // 输出结果
                 Console.WriteLine("a: {0}", result[0].GetValue());
             }
+
+            // 保存模型
+            var path = Environment.CurrentDirectory;
         }
     }
 }
