@@ -84,6 +84,8 @@ a*b=6
 
 5. 本教程需要在根目录新建`Libs`文件夹，请将第二步解压出来的`TensorFlowSharp.dll`放在该文件夹；另外运行示例还需要把`libtensorflow.dll`复制到每个项目的`bin/Debug`目录。如果提示找不到Tensorflow命名空间，请重新添加引用。
 
+6. 最新版libtensorflow.dll下载：http://ci.tensorflow.org/view/Nightly/job/nightly-libtensorflow-windows/lastSuccessfulBuild/artifact/lib_package/libtensorflow-cpu-windows-x86_64.zip
+
 ## 网站
 
 * Tensorflow官网：http://www.tensorflow.org
