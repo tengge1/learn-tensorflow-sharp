@@ -40,8 +40,12 @@ namespace p16_ModelSave
             }
 
             // 保存模型
-            var path = Environment.CurrentDirectory;
-            //g.Save("")
+            var path = Environment.CurrentDirectory + "\\tmp\\mymodel.mdl";
+
+            g.Save(
+                g.Const(TFTensor.CreateString(Encoding.UTF8.GetBytes(path)), TFDataType.String),
+                g.Const(TFTensor.CreateString(Encoding.UTF8.GetBytes("a")), TFDataType.String),
+                new[] { a });
         }
     }
 }
