@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p15_PartialRun", "p15_Parti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p16_ModelSave", "p16_ModelSave\p16_ModelSave.csproj", "{0F7C1F34-F282-4EFD-87F9-DB3E85CBFC51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p17_TFCoreTest", "p17_TFCoreTest\p17_TFCoreTest.csproj", "{09754039-AFB3-417E-A2F4-C5EC935A3325}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{0F7C1F34-F282-4EFD-87F9-DB3E85CBFC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F7C1F34-F282-4EFD-87F9-DB3E85CBFC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F7C1F34-F282-4EFD-87F9-DB3E85CBFC51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09754039-AFB3-417E-A2F4-C5EC935A3325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09754039-AFB3-417E-A2F4-C5EC935A3325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09754039-AFB3-417E-A2F4-C5EC935A3325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09754039-AFB3-417E-A2F4-C5EC935A3325}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
