@@ -34,6 +34,12 @@ Tensorflow是一个人工智能框架。TensorflowSharp是对Tensorflow C语言�
 
 [p15_PartialRun](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p15_PartialRun/Program.cs)：部分运行。
 
+[p16_ModelSave](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p16_ModelSave/Program.cs)：保存模型。（未实现）
+
+[p17_TFCoreTest](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p17_TFCoreTest/Program.cs)：TFCore测试。
+
+[p18_TFBufferTest](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p18_TFBufferTest/Program.cs)：TFBuffer测试。
+
 ## 示例
 
 TensorflowSharp的用法还是很简单的
