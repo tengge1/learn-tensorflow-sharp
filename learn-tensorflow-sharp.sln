@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p18_TFBufferTest", "p18_TFB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p19_TFDataTypeTest", "p19_TFDataTypeTest\p19_TFDataTypeTest.csproj", "{AC023600-3635-450F-B743-F94F7FD9E81C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p20_ComparisonOperators", "p20_ComparisonOperators\p20_ComparisonOperators.csproj", "{C7EEA7F0-02F6-44D6-9BDF-5EB6535E4A6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{AC023600-3635-450F-B743-F94F7FD9E81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC023600-3635-450F-B743-F94F7FD9E81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC023600-3635-450F-B743-F94F7FD9E81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7EEA7F0-02F6-44D6-9BDF-5EB6535E4A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7EEA7F0-02F6-44D6-9BDF-5EB6535E4A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7EEA7F0-02F6-44D6-9BDF-5EB6535E4A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7EEA7F0-02F6-44D6-9BDF-5EB6535E4A6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
