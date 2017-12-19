@@ -40,6 +40,12 @@ Tensorflow是一个人工智能框架。TensorflowSharp是对Tensorflow C语言�
 
 [p18_TFBufferTest](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p18_TFBufferTest/Program.cs)：TFBuffer测试。
 
+[p19_TFDataTypeTest](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p19_TFDataTypeTest/Program.cs)：TFDataType测试。
+
+[p20_ComparisonOperators](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p20_ComparisonOperators/Program.cs)：比较运算符。
+
+[p22_ConditionalOperators](https://github.com/tengge1/learn-tensorflow-sharp/blob/master/p22_ConditionalOperators/Program.cs)：条件运算符。
+
 ## 示例
 
 TensorflowSharp的用法还是很简单的
